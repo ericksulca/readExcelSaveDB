@@ -74,10 +74,23 @@ WSGI_APPLICATION = 'name.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+'''
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'mysql_cymysql',
+        'NAME': 'data_apgames',
+        'USER': 'develop',
+        'PASSWORD': 'admindb_@@',
+        'HOST': '127.0.0.1',
+        'PORT': '',
     }
 }
 
